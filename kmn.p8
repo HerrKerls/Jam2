@@ -117,7 +117,8 @@ end
 
 function draw_gameplay()
  -- gameplay draing
- 
+ rectfill(0,0,127,127,5)
+ spr(1,8,8,6,6)
 end
 
 function draw_gameover()
