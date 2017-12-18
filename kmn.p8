@@ -1,7 +1,139 @@
 pico-8 cartridge // http://www.pico-8.com
 version 8
 __lua__
+-- klicker manager nanny
+-- 2017-12-17
+-- lea strauch, christoph kerls
+-- v0.1
 
+cls()
+
+function _init()
+ 
+ state = 1
+ -- 0 = main menu
+ -- 1 = gameplay
+ -- 2 = game over
+ -- 3 = game won
+ -- 4 = paused
+ 
+ 
+end
+
+
+function _update60()
+ if (state == 0) then
+  -- main menu logic
+  update_mainmenu()
+ elseif (state == 1) then
+  -- gameplay logic
+  update_gameplay()
+ elseif (state == 2) then
+  -- gameover logic
+  update_gameover()
+ elseif (state == 3) then
+  -- game won logic
+  update_gamewon()
+ elseif (state == 4) then
+  -- game paused logic
+  update_gamepaused()  
+ end
+end
+
+
+-- *************************
+-- **** updates section ****
+-- *************************
+
+function update_mainmenu()
+ -- main menu logic
+ 
+end
+
+function update_gameplay()
+ -- gameplay logic
+ 
+end
+
+function update_gameover()
+ -- gameover logic
+ 
+end
+
+function update_gamewon()
+ -- gameover logic
+ 
+end
+
+function update_gamepaused()
+ -- gameover logic
+ 
+end
+
+
+-- **************************
+-- **** function section ****
+-- **************************
+
+function add_item1()
+
+end
+
+function add_item2()
+
+end
+
+
+
+
+function _draw()
+ if (state == 0) then
+  -- main menu logic
+  draw_mainmenu()
+ elseif (state == 1) then
+  -- gameplay logic
+  draw_gameplay()
+ elseif (state == 2) then
+  -- gameover logic
+  draw_gameover()
+ elseif (state == 3) then
+  -- gameover logic
+  draw_gamewon()
+ elseif (state == 4) then
+  -- gameover logic
+  draw_gamepaused()
+ end
+end 
+
+
+-- *************************
+-- **** drawing section ****
+-- *************************
+
+function draw_mainmenu()
+ -- main menu drawing
+ 
+end
+
+function draw_gameplay()
+ -- gameplay draing
+ 
+end
+
+function draw_gameover()
+ -- gameover drawing
+ 
+end
+
+function draw_gamewon()
+ -- gamewon drawing
+ 
+end
+
+function draw_gamepaused()
+ -- gamepaused drawing
+ 
+end
 __gfx__
 00000000000000000000000000000000000000000000000000000000665ffffffffffffffffffffffff566506655555555fffffffffff5555555665000000000
 00000000000000000000000000000000000000000000000000000000665ffffffffffffffffffffffff56650665755555555ffffffff55555555565000000000
